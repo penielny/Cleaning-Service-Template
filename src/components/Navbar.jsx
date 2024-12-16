@@ -28,7 +28,7 @@ export default function Navbar() {
             </button>
         </nav>
 
-        {showSlider && <motion.div className={` md:hidden absolute top-0 left-0 h-dvh right-0 flex justify-end overflow-hidden z-50 bg-black/30 backdrop-blur-sm`}>
+        {showSlider && <motion.div className={` md:hidden absolute top-0 left-0 h-dvh right-0 flex justify-end overflow-y-auto z-50 bg-black/30 backdrop-blur-sm`}>
             <div className='bg-transparent flex-1' onClick={() => setShowSlider(prev => !prev)}>
 
             </div>
