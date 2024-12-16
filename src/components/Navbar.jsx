@@ -28,11 +28,11 @@ export default function Navbar() {
             </button>
         </nav>
 
-        {showSlider && <motion.div className={` md:hidden absolute top-0 left-0 h-dvh right-0 flex justify-end overflow-y-auto z-50 bg-black/30 backdrop-blur-sm`}>
+        {showSlider && <motion.div className={` md:hidden absolute top-0 left-0 h-dvh right-0 flex justify-end overflow-y-hidden z-50 bg-black/30 backdrop-blur-sm`}>
             <div className='bg-transparent flex-1' onClick={() => setShowSlider(prev => !prev)}>
 
             </div>
-            <motion.div exit={{ x: "80vw" }} initial={{ x: "80vw" }} animate={{ x: 0 }} className='flex flex-col space-y-6 bg-white w-3/4 p-6 transition-all delay-75 duration-200'>
+            <motion.div exit={{ x: "80vw" }} initial={{ x: "80vw" }} animate={{ x: 0 }} className='flex flex-col space-y-6 bg-white w-3/4 p-6 h-full overflow-y-auto transition-all delay-75 duration-200'>
                 <div className='md:pr-10 border-gray-300 md:border-r'>
                     <h1 className='font-bold text-lg'>BrandLogo</h1>
                 </div>
